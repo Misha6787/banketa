@@ -1,0 +1,19 @@
+$basecolor: rgb( 255, 213, 86 );
+$bordercolor: #e8e8e8;
+$borderLabelcolor: #d0d0d0;
+$menucolor: #f1f1f1;
+$spancolor: #ff7c67;
+$borderHovercolor: rgba(245,187,71,0.9);
+$borderHoverLeftcolor: rgba(81,88,104,0.9);
+$footercolor: #636363;
+@import './header/block_header.scss';
+@import './main/block_main.scss';
+@import './footer/block_footer.scss';
+@import './itemsCss/button.scss';
+@import './itemsCss/modal.scss';
+.wrapper {
+    margin: 0 auto;
+    max-width: 990px;
+    max-height: 100%;
+    padding: 0 24px;
+}

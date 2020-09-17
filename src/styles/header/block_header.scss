@@ -1,0 +1,428 @@
+.header {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url("../assets/glavnaya/headerBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .wrapper {
+        & .navigation {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 68px;
+            & .navigation__block-logo {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: end;
+                margin-top: 32px;
+                & .logo {
+                    color: white;
+                    & img {
+                        width: 235px;
+                        height: 48px;
+                    }
+                    & .subtext__logo {
+                        font-family: 'HelveticaNeueCyr-Roman';
+                        font-size: 10.5px;
+                        margin-top: 8px;
+                        margin-left: 1px;
+                    }
+                }
+                & .choice__city {
+                    position: relative;
+                }
+            }
+            & .navigation__block-menu {
+                display: flex;
+                align-items: center;
+                position: relative;
+                top: -6px;
+                & .menu__item {
+                    font-family: 'HelveticaUltraLight';
+                    color: $menucolor;
+                    margin-right: 20px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    letter-spacing: 0.07em;
+                    &:nth-child(5) {
+                        text-decoration: underline;
+                        text-decoration-color: #bdbfc3;
+                        text-decoration-style: dotted;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: #bdbfc3;
+                    }
+                }
+                & .menu__item-authorization {
+                    display: flex;
+                    align-items: center;
+                    & .menu__item-authorization-text {
+                        margin-right: 9px;
+                    }
+                }
+                & img[alt="avatar"] {
+                    width: 24px;
+                    height: 24px;
+                }
+                & .burger__menu {
+                    display: none;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid $borderLabelcolor;
+                    border-radius: 8px;
+                    background-color: white;
+                }
+            }
+        }
+        & .navigation__search {
+            margin-bottom: 32px;
+            & .navigation__search-title {
+                color: white;
+                font-family: 'HelveticaNeueMedium';
+                font-weight: 600;
+                text-transform: uppercase;
+                max-width: 772px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 28px;
+                line-height: 1.3;
+                letter-spacing: 0.1em;
+                margin-bottom: 34px;
+            }
+            & .search__block {
+                position: relative;
+                display: block;
+                z-index: 1;
+                & .decor__block {
+                    background-color: #313438;
+                    width: 103%;
+                    height: 114%;
+                    left: -1.5%;
+                    top: -7%;
+                    border-radius: 20px;
+                    position: absolute;
+                    opacity: 0.2;
+                }
+                & .search_restaraunt-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    padding: 0 30px;
+                    padding-top: 12px;
+                    border-radius: 12px;
+                    position: relative;
+                    justify-content: space-between;
+                    z-index: 1;
+                    font-family: 'HelveticaLight';
+                    & .search__restoraunt-subtitle {
+                        font-size: 20px;
+                        display: block;
+                        margin-top: 18px;
+                        margin-bottom: 14px;
+                        font-weight: 700;
+                    }
+                    & .format {
+                        flex: 30%;
+                        margin-top: 16px;
+                        & .search__restoraunt-subtitle {
+                            position: relative;
+                            top: -16px;
+                        }
+                    }
+                    & .sum {
+                        flex: 30%;
+                        & .search__restoraunt-subtitle {
+                            margin-left: 12px;
+                        }
+                        &::before {
+                            content: 'чел.';
+                            position: absolute;
+                            margin-top: 68px;
+                            margin-left: 56px;
+                            color: #b8b8b8;
+                        }
+                        & #search__number {
+                            padding: 16px;
+                            border: 1px solid $borderLabelcolor;
+                            border-radius: 8px;
+                            width: 78%;
+                            font-weight: 700;
+                        }
+                        & .sum__range {
+                            -webkit-appearance: none;
+                            border: none;
+                            width: 90%;
+                            background-color: initial;
+                            cursor: pointer;
+                        }
+                        & .sum__range::-webkit-slider-thumb {
+                            height: 36px;
+                            width: 16px;
+                            background-image: url("../assets/glavnaya/truck.png");
+                            background-repeat: no-repeat;
+                            cursor: pointer;
+                            -webkit-appearance: none;
+                            margin-top: -14px;
+                        }
+                    }
+                    & .date {
+                        flex: 40%;
+                        & .search__restoraunt-subtitle {
+                            margin-left: 12px;
+                        }
+                    }
+                    & .block__date {
+                        display: flex;
+                        justify-content: space-between;
+                        & .choise__date {
+                            padding: 15px 0;
+                            border: 1px solid $borderLabelcolor;
+                            border-radius: 8px;
+                            width: 230px;
+                            display: flex;
+                            position: relative;
+                            justify-content: space-between;
+                            align-items: center;
+                            &::before {
+                                content: '';
+                                background-image: url("../assets/glavnaya/calendar.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 20px;
+                                height: 20px;
+                                display: flex;
+                                position: absolute;
+                                margin: 0 16px;
+                                z-index: 999;
+                                left: 0;
+                            }
+                            &::after {
+                                content: '';
+                                background-image: url("../assets/glavnaya/arrows/arrowDate.svg");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 18px;
+                                height: 18px;
+                                display: flex;
+                                position: absolute;
+                                margin: 0 16px;
+                                z-index: 999;
+                                right: 0;
+                            }
+                        }
+                        & .choise__date-active {
+                            &::after {
+                                background-image: url("../assets/glavnaya/arrows/arrowBlackBot.svg");
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+                & .choise__format {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: -16px;
+                }
+                & label {
+                    background-color: white;
+                    border: 1px solid $borderLabelcolor;
+                    padding: 16px 18px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                }
+                & label::before {
+                    content: '';
+                    background-image: url("../assets/glavnaya/tickActive.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 12px;
+                }
+                & input[type="radio"] {
+                    display: none;
+                }
+                & label[for="search__banquet"] {
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+                & label[for="search__furshet"] {
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+                & input[type=radio]:checked + label:before {
+                    content: '';
+                    background-image: url("../assets/glavnaya/tickDisabled.svg");
+                }
+                & input[type=radio]:checked + label {
+                    background-color: $basecolor;
+                    border: 1px solid $basecolor;
+                }
+                & #search__banquet:checked #search__furshet, #search__banquet {
+                    background-color: white;
+                    border: 1px solid $borderLabelcolor;
+                }
+            }
+        }
+        & .block__merit {
+            font-family: 'HelveticaLight';
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            & .merit__item {
+                text-align: center;
+                max-width: 238px;
+                color: $menucolor;
+                line-height: 1.3;
+                margin-bottom: 40px;
+                & b {
+                    font-family: 'HelveticaNeueMedium';
+                    font-weight: 300;
+                }
+                & p {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .header {
+        & .wrapper {
+            & .navigation {
+                align-items: unset !important;
+                flex-direction: column;
+                justify-content: center;
+                & .navigation__block-logo {
+                    justify-content: center;
+                    flex: 100%;
+                }
+                & .navigation__block-menu {
+                    justify-content: center;
+                    flex: 100%;
+                    margin-top: 24px;
+                }
+            }
+            & .navigation__search {
+                & .search_restaraunt-block {
+                    & label {
+                        padding: 16px 10px;
+                    }
+                    & label::before {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .search_restaraunt-block {
+        padding-bottom: 24px !important;
+    }
+    .block__date {
+        justify-content: unset !important;
+        & .choise__date {
+            margin-right: 28px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        & .wrapper {
+            & .navigation__search {
+                & h1 {
+                    font-size: 28px;
+                }
+                & .search_restaraunt-block {
+                    & .date {
+                        flex: 100%;
+                    }
+                }
+                & .search__block {
+                    & .decor__block {
+                        background-color: #313438;
+                        height: 108%;
+                        top: -3.9%;
+                        width: 104%;
+                        left: -2%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .header {
+        & .wrapper {
+            & .navigation {
+                margin-bottom: 38px;
+                & .navigation__block-menu {
+                    display: flex;
+                    justify-content: space-between;
+                    & .burger__menu {
+                        display: block;
+                    }
+                    & a, img[alt="avatar"] {
+                       display: none;
+                    } 
+                }
+            }
+            & .navigation__search {
+                & h1 {
+                    font-size: 24px;
+                }
+                & .search_restaraunt-block {
+                    & .format {
+                        margin-bottom: 16px;
+                        justify-content: center;
+                    }
+                    & .sum {
+                        flex: 100% !important;
+                        padding-top: 26px;
+                        & #search__number {
+                            width: 66%;
+                        }
+                    }
+                    & .date {
+                        flex: 100% !important;
+                        & .block__date {
+                            flex-wrap: wrap;
+                            & .choise__date {
+                                & .search__data {
+                                    margin-left: 36px;
+                                    margin-right: 36px;
+                                }
+                            }
+                            & .search_restaraunt {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                & .search__block {
+                    & .decor__block {
+                        background-color: #313438;
+                        height: 104%;
+                        top: -2%;
+                        width: 106%;
+                        left: -3%;
+                    }
+                }
+            }
+            & .block__merit {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                & .merit__item {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

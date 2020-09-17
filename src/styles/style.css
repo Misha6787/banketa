@@ -1,0 +1,12 @@
+@import 'normalize.css';
+@import 'header/datepicker.css';
+@import 'fonts.css';
+body {
+    overflow-x: hidden;
+}
+button, a, select, input{
+    outline: 0 !important;
+}
+a {
+    text-decoration: none;
+}

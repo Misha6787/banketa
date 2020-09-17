@@ -1,0 +1,74 @@
+.footer {
+    & .wrapper {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 104px;
+        & .copyright__block {
+            & .copyright__logo {
+                margin-bottom: 18px;
+            }
+            
+            & .copyright__text {
+                font-family: 'HelveticaNeueCyr-Roman';
+                font-size: 12px;
+                color: black;
+                line-height: 1.6;
+            }
+        }
+        & .footer__block {
+            display: flex;
+            flex-direction: column;
+            & .footer__item {
+                font-family: 'HelveticaNeueCyr-Roman';
+                color: black;
+                font-size: 12px;
+                line-height: 2;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .footer__title {
+            font-family: 'HelveticaNeueMedium';
+            font-weight: 300;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        & .social__block {
+            & .social__links {
+                display: flex;
+                align-items: flex-end;
+                & .social__link {
+                    margin-right: 4px;
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                        &:hover {
+                            filter: brightness(90%);
+                            transition: 0.2s ease;
+                        }
+                    }
+                }
+                & .subscribe {
+                    background-image: url("../assets/glavnaya/footer/socialIcon/subscribe.svg");
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    padding: 8px 8px 8px 12px;
+                    font-family: 'HelveticaNeueCyr';
+                    font-size: 12px;
+                    color: $footercolor;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 326px) {
+    .footer {
+        & .wrapper {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

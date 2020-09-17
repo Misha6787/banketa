@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <title>Banketa</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="navigation">
+                <div class="navigation__block-logo">
+                    <div class="logo">
+                        <img src="../src/assets/glavnaya/header/logo.png" alt="logo">
+                        <div class="subtext__logo">бесплатный сервис для бронирования банкета</div>
+                    </div>
+                    <div class="choice__city">
+                        <button class="search__city">Москва</button>
+                    </div>
+                </div>
+                <div class="navigation__block-menu">
+                    <button class="btn btn__addRestoran"><img src="../src/assets/glavnaya/plus.png" alt="plus">Добавить ресторан</button>
+                    <a href="#" class="menu__item">Рестораны</a>
+                    <a href="#" class="menu__item">Банкеты</a>
+                    <a href="#" class="menu__item">События</a>
+                    <a href="#" class="menu__item menu__item-authorization">
+                        <span class="menu__item-authorization-text">Авторизация</span>
+                        <img src="../src/assets/glavnaya/avatar.png" alt="avatar"></a>
+                    <button class="burger__menu"><img src="../src/assets/glavnaya/burgerMenu.svg" alt="burger__menu"></button>
+                </div>
+            </div>
+            <!-- /.navigation -->
+            <div class="navigation__search">
+                <h2 class="navigation__search-title">Забронируйте бесплатно ресторан для проведения вашего мероприятия</h2>
+                <div class="search__block">
+                    <div class="decor__block"></div>
+                    <div class="search_restaraunt-block">
+                        <div class="format">
+                            <span class="search__restoraunt-subtitle">Выберите формат:</span>
+                            <div class="choise__format">
+                                <input id="search__banquet" type="radio" name="card-type" checked>
+                                <label for="search__banquet">Банкет</label>
+                                <input id="search__furshet" type="radio" name="card-type">
+                                <label for="search__furshet">Фуршет</label>
+                            </div>
+                            
+                        </div>
+                        <div class="sum">
+                            <span class="search__restoraunt-subtitle">Кол-во человек:</span>
+                            <input type="number" name="number" value="0" id="search__number">
+                            <input type="range" min="0" max="1000" step="1" value="0" class="sum__range">
+                        </div>
+                        <div class="date">
+                            <span class="search__restoraunt-subtitle">Выберите дату:</span>
+                            <div class="block__date">
+                                <div class="choise__date">
+                                    <input type="text" class="search__data" id="datepicker"></input>
+                                </div>
+                                <button class="btn search_restaraunt"><img src="/src/assets/glavnaya/search.png" alt="search">Найти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.block__search -->
+            <div class="block__merit">
+                <div class="merit__item">
+                    <img src="/src/assets/glavnaya/gaurnitur.png" alt="gaurnitur">
+                    <p>
+                        <b>Бесплатный сервис</b> для бронирования банкета
+                    </p>
+                </div>
+                <div class="merit__item">
+                    <img src="/src/assets/glavnaya/banket.png" alt="banket">
+                    <p>
+                        Более <b>2500 банкетных залов</b> и площадок в базе
+                    </p>
+                </div>
+                <div class="merit__item">
+                    <img src="/src/assets/glavnaya/calendarYellow.png" alt="calendarYellow">
+                    <p>
+                        Бронируйте на выбранную вами дату <b>бесплатно</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    <main class="main">
+        <div class="wrapper">
+            <div class="special__offers">
+                <h2 class="main__title">Спецпредложения <span> Новинки</span></h2>
+                <div class="card__list">
+                    <div class="card" data-label="price">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/1.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="card" data-label="select">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/2.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/3.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/4.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/5.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="shadow__bg"></div>
+                        <img src="../src/assets/glavnaya/restorauntCard/6.jpg" alt="1" class="card__bg">
+                        <div class="ratting__block">
+                            <div class="rating">6,2</div>
+                            <div class="ratting__rev">
+                                <div class="ratting__text">Неплохо</div>
+                                <a href="#" class="ratting__comment">122 отзыва</a>
+                            </div>
+                        </div>
+                        <a href="#" class="card__title">Трапезная</a>
+                        <div class="location">
+                            <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn card__btn left">Подробней</button>
+                            <button class="btn card__btn right">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="more__offers">
+                        <div class="card">
+                            <div class="shadow__bg"></div>
+                            <img src="../src/assets/glavnaya/restorauntCard/1.jpg" alt="1" class="card__bg">
+                            <div class="ratting__block">
+                                <div class="rating">6,2</div>
+                                <div class="ratting__rev">
+                                    <div class="ratting__text">Неплохо</div>
+                                    <a href="#" class="ratting__comment">122 отзыва</a>
+                                </div>
+                            </div>
+                            <a href="#" class="card__title">Трапезная</a>
+                            <div class="location">
+                                <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn card__btn left">Подробней</button>
+                                <button class="btn card__btn right">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="shadow__bg"></div>
+                            <img src="../src/assets/glavnaya/restorauntCard/2.jpg" alt="1" class="card__bg">
+                            <div class="ratting__block">
+                                <div class="rating">6,2</div>
+                                <div class="ratting__rev">
+                                    <div class="ratting__text">Неплохо</div>
+                                    <a href="#" class="ratting__comment">122 отзыва</a>
+                                </div>
+                            </div>
+                            <a href="#" class="card__title">Трапезная</a>
+                            <div class="location">
+                                <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn card__btn left">Подробней</button>
+                                <button class="btn card__btn right">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="shadow__bg"></div>
+                            <img src="../src/assets/glavnaya/restorauntCard/3.jpg" alt="1" class="card__bg">
+                            <div class="ratting__block">
+                                <div class="rating">6,2</div>
+                                <div class="ratting__rev">
+                                    <div class="ratting__text">Неплохо</div>
+                                    <a href="#" class="ratting__comment">122 отзыва</a>
+                                </div>
+                            </div>
+                            <a href="#" class="card__title">Трапезная</a>
+                            <div class="location">
+                                <span><img src="../src/assets/glavnaya/locationBlack.svg" class="card__icon" alt="location">Москва, Измайловское ш., 71, корп. 4 Г-Д</span>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn card__btn left">Подробней</button>
+                                <button class="btn card__btn right">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn__hide-all special-offers"><span>Посмотреть все спец предложения</span></button>
+            </div>
+            <div class="restaurants__category">
+                <h2 class="main__title">Заведения по категориям</h2>
+                <div class="category__list">
+                    <a href="#" class="category__card">
+                        <div class="background__card">
+                            <img src="../src/assets/glavnaya/resrorauntCategory/1.jpg" alt="1" style="width: 100%;">
+                        </div>
+                        <div class="block__card"></div>
+                        <div class="text__card">
+                            <h3 class="title__card">Банкетные залы</h3>
+                            <span class="subtitle__card">122 зала</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category__card">
+                        <div class="background__card">
+                            <img src="../src/assets/glavnaya/resrorauntCategory/2.jpg" alt="2" style="width: 100%;">
+                        </div>
+                        <div class="block__card"></div>
+                        <div class="text__card">
+                            <h3 class="title__card">Рестораны, кафе</h3>
+                            <span class="subtitle__card">122 заведения</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category__card">
+                        <div class="background__card">
+                            <img src="../src/assets/glavnaya/resrorauntCategory/3.jpg" alt="3" style="width: 100%;">
+                        </div>
+                        <div class="block__card"></div>
+                        <div class="text__card">
+                            <h3 class="title__card">Шатер</h3>
+                            <span class="subtitle__card">122 навеса</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category__card">
+                        <div class="background__card">
+                            <img src="../src/assets/glavnaya/resrorauntCategory/4.jpg" alt="4" style="width: 100%;">
+                        </div>
+                        <div class="block__card"></div>
+                        <div class="text__card">
+                            <h3 class="title__card">Открытые площадки</h3>
+                            <span class="subtitle__card">122 навеса</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="publications">
+                <h2 class="main__title">Публикации</h2>
+                <div class="publications__slider" current-slide="0">
+                    <div class="publications__item publications__item-active">
+                        <div class="content__block">
+                            <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                            <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                            <div class="publications__navigation">
+                                <button class="btn btn__slide">Подробнеe</button>
+                                <div class="publications__dots">
+                                    <div class="dot dot-active"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img__block"></div>
+                    </div>
+                    <div class="publications__item">
+                        <div class="content__block">
+                            <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                            <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                            <div class="publications__navigation">
+                                <button class="btn btn__slide">Подробнеe</button>
+                                <div class="publications__dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img__block"></div>
+                    </div>
+                    <div class="publications__item">
+                        <div class="content__block">
+                            <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                            <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                            <div class="publications__navigation">
+                                <button class="btn btn__slide">Подробнеe</button>
+                                <div class="publications__dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img__block"></div>
+                    </div>
+                </div>
+                <div class="more__offers">
+                    <div class="publications__slider" current-slide="0">
+                        <div class="publications__item publications__item-active">
+                            <div class="content__block">
+                                <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                                <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                                <div class="publications__navigation">
+                                    <button class="btn btn__slide">Подробнеe</button>
+                                    <div class="publications__dots">
+                                        <div class="dot dot-active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img__block"></div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="content__block">
+                                <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                                <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                                <div class="publications__navigation">
+                                    <button class="btn btn__slide">Подробнеe</button>
+                                    <div class="publications__dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img__block"></div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="content__block">
+                                <h3 class="slide__title">Открылось новое направление китайской кухни</h3>
+                                <span class="slide__subtext">На другом конце страны или мира, Элис и Крис всегда хотят посмотреть на новое место глазами местных жителей</span>
+                                <div class="publications__navigation">
+                                    <button class="btn btn__slide">Подробнеe</button>
+                                    <div class="publications__dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img__block"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn__hide-all all-publications"><span>Посмотреть все публикаций</span></button>
+            </div>
+        </div>
+        <div class="join__us">
+            <div class="join__us-background"></div>
+            <div class="join__us-content">
+                <h2 class="join__us-title">Присоединяйтесь к нам</h2>
+                <span class="join__us-subtitle">Если вы являетесь представителем банкетного зала, клуба, или ресторана и хотите размещаться в нашей системе</span>
+                <button class="btn btn__join-us">Присоедениться</button>
+            </div>
+        </div>
+    </main>
+    <!-- /.main -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="copyright__block">
+                <div class="copyright__logo">
+                    <img src="../src/assets/glavnaya/footer/socialIcon/logoFooter.png" alt="logoIcon">
+                </div>
+                <span class="copyright__text">
+                    © 2012-2015 Banketa.ru
+                    <br>
+                    Все права защищены
+                </span>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__title">Популярные города</h3>
+                <a href="#" class="footer__item">Москва</a>
+                <a href="#" class="footer__item">Санкт-Петербург</a>
+                <a href="#" class="footer__item">Екатеринбург</a>
+                <a href="#" class="footer__item">Владивосток</a>
+                <a href="#" class="footer__item">Посмотреть все</a>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__title">Информация</h3>
+                <a href="#" class="footer__item">О Проекте</a>
+                <a href="#" class="footer__item">Вакансии</a>
+                <a href="#" class="footer__item">Партнерам</a>
+                <a href="#" class="footer__item">Ресторанам</a>
+                <a href="#" class="footer__item">Обзоры</a>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__title">Контакты</h3>
+                <a href="#" class="footer__item">Контакты</a>
+                <a href="#" class="footer__item">Обратная связь</a>
+                <a href="#" class="footer__item">Правила и условия</a>
+                <a href="#" class="footer__item">Сообщить об ошибке</a>
+            </div>
+            <div class="social__block">
+                <h3 class="footer__title">Мы в соц.сетях</h3>
+                <div class="social__links">
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/vk.svg" alt="vk"></a>
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/odnoklassniki.svg" alt="odnoklassniki"></a>
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/twitter.svg" alt="twitter"></a>
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/google-plus.svg" alt="google-plus"></a>
+                    <a href="#" class="social__link"><img src="../src/assets/glavnaya/footer/socialIcon/subscribePlus.svg" alt="subscribe"></a>
+                    <a href="#" class="subscribe">147.2K</a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="choice__city-block" style="display: none;">
+        <div class="choise__city-col">
+            <a href="#" class="choise__city-item">Саратов</a>
+            <a href="#" class="choise__city-item">Краснодар</a>
+            <a href="#" class="choise__city-item">Тольятти</a>
+            <a href="#" class="choise__city-item">Тюмень</a>
+            <a href="#" class="choise__city-item">Ижевск</a>
+            <a href="#" class="choise__city-item">Барнаул</a>
+            <a href="#" class="choise__city-item">Иркутск</a>
+            <a href="#" class="choise__city-item">Ульяновск</a>
+            <a href="#" class="choise__city-item">Саратов</a>
+            <a href="#" class="choise__city-item">Краснодар</a>
+            <a href="#" class="choise__city-item">Тольятти</a>
+            <a href="#" class="choise__city-item">Тюмень</a>
+            <a href="#" class="choise__city-item">Ижевск</a>
+            <a href="#" class="choise__city-item">Барнаул</a>
+            <a href="#" class="choise__city-item">Иркутск</a>
+            <a href="#" class="choise__city-item">Ульяновск</a>
+            <a href="#" class="choise__city-item">Тольятти</a>
+            <a href="#" class="choise__city-item">Тюмень</a>
+            <a href="#" class="choise__city-item">Ижевск</a>
+            <a href="#" class="choise__city-item">Барнаул</a>
+            <a href="#" class="choise__city-item">Иркутск</a>
+            <a href="#" class="choise__city-item">Ульяновск</a>
+        </div>
+    </div>
+</body>
+</html>
